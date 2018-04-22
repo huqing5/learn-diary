@@ -1,0 +1,14 @@
+一.git的安装
+搜索“git”,到官方网站下载，会跳转到github上，右键保存windows的版本的exe文件到本地（下载是最好使用翻墙软件psiphon），然后双击安装。
+
+二.使用
+1.配置用户名和用户邮件
+
+打开命令行或Git Bash，输入下面的命令：
+git config --global user.name “huqing” 
+git config --global user.email “huqingwork@163.com”
+若省略了“--global”，则只配置当前仓库用户信息
+
+2.生成SSH密钥，使用SSH方式认证登录
+ssh-keygen -C “huqingwork@163.com” -t rsa
+默认是存放在c盘user用户下。/c/Users/Administrator/.ssh/
