@@ -30,4 +30,5 @@ git remote add origin git@github.com:huqing5/learn-diary.git
 将提交推送到远端库github上
 git push -u origin master   
 
+
 这样远端库，本地库就有了。
