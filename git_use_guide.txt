@@ -12,3 +12,22 @@ git config --global user.email “huqingwork@163.com”
 2.生成SSH密钥，使用SSH方式认证登录
 ssh-keygen -C “huqingwork@163.com” -t rsa
 默认是存放在c盘user用户下。/c/Users/Administrator/.ssh/
+
+3.创建一个Git本地库
+在F盘新建一个目录，进入后，右键 "Git Bash here" 打开git,然后执行“git init” 初始化本地仓。
+然后可以在这个目录中新建文本文件。
+
+4.用下面的命令提交到github的仓中。
+将新建的文件添加到暂存区
+git add . 
+
+提交
+git commit -m “add new file git_use_guide.txt" 
+
+添加源到GitHub，git@github.com:huqing5/learn-diary.git 是github上新建仓后有的
+git remote add origin git@github.com:huqing5/learn-diary.git   
+
+将提交推送到远端库github上
+git push -u origin master   
+
+这样远端库，本地库就有了。
